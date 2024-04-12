@@ -1,0 +1,9 @@
+@import "./Variables.scss";
+
+#root {
+    font-family: $textFontFamily;
+    font-weight: $textFontWeight;
+    background-color: $mainColor;
+    min-height: 100vh;
+    color: $secondColor;
+}

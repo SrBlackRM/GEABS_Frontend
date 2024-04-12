@@ -1,0 +1,38 @@
+@import "../Variables.scss";
+
+.banner-container{
+    justify-content: space-between;
+    
+    .banner-info-container{
+        position: relative;
+        width: 100%;
+        margin: 10% 0 0 10%;
+
+
+        h1 {
+            color: red;
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+    }
+
+    .banner-image-container{
+        width: 100%;
+        margin-right: 5%;
+    }
+
+    input[type='button']{
+        width: 200px;
+        height: 50px;
+        background-color: $buttonCallColor;
+        color: $secondColor;
+        border: none;
+        border-radius: 10px;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $buttonCallColorHover;
+        }
+    }
+}
+

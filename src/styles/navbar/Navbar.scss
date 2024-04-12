@@ -1,0 +1,36 @@
+@import "../Variables.scss";
+
+.navbar{
+    background-color: $navbarColor;
+    color: $secondColor;
+    justify-content: space-between;
+    padding: 1rem 5rem 1rem 5rem;
+    border-bottom: 1px solid rgb(188, 188, 188);
+    max-width: 100vw;
+
+    .logo{
+        img{
+            width: $logo;
+            height: $logo;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .icon{
+        img{
+            width: $icon;
+            height: $icon;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .right-side{
+        max-height: $logo;
+        gap: 15px;
+    }
+}
