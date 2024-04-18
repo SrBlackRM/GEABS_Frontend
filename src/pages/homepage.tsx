@@ -2,7 +2,7 @@
 import Banner from "../components/banner/banner";
 import CourseContainerByCategory from "../components/courseContainer/CourseContainer";
 import { CourseCategory } from "../interfaces/courseCategory";
-import "../styles/home/homepage.scss"
+import "./styles/homepage.scss"
 
 
 export default function HomePage(){

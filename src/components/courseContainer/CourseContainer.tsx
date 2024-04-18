@@ -10,7 +10,7 @@ export default function CourseContainerByCategory({ category, courses } : Course
             <h1 className="category-name">{category}</h1>
             <div className="category">
                 {courses.map(courseCard =>  
-                    CourseNodeElemCard(courseCard)
+                    <CourseNodeElemCard name={courseCard.name} imgSrc={courseCard.imgSrc} key={courses.indexOf(courseCard)} />
                 )}
             </div>
             <CourseButtonCategory direction="previous" />

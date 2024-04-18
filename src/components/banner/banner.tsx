@@ -5,7 +5,7 @@ import { Image } from "../../interfaces/image";
 import bannerImage from "../../assets/trabalho_em_altura.png"
 
 // styles
-import "../../styles/banner/Banner.scss"
+import "./styles/Banner.scss"
 
 // hooks
 import useImageGetSize from "../../hooks/useImageGetSize";

@@ -1,7 +1,7 @@
 // styles
-import "../../styles/navbar/Navbar.scss";
-import "../../styles/navbar/Search.scss"
-import "../../styles/navbar/Dropdown.scss"
+import "./styles/Navbar.scss";
+import "./styles/Search.scss"
+import "./styles/Dropdown.scss"
 
 // images
 import logoIMG from "../../assets/LogoGEABS.png";
