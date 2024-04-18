@@ -1,4 +1,5 @@
 import { CourseCategory } from "../../interfaces/courseCategory";
+import { CourseButtonCategory } from "./CourseButtonCategory";
 import { CourseNodeElemCard } from "./CourseNodeElem";
 import  './styles/CourseStyles.scss';
 
@@ -12,6 +13,8 @@ export default function CourseContainerByCategory({ category, courses } : Course
                     CourseNodeElemCard(courseCard)
                 )}
             </div>
+            <CourseButtonCategory direction="previous" />
+            <CourseButtonCategory direction="next" />
         </div>
     );
 }

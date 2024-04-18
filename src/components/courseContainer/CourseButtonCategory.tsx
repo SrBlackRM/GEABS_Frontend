@@ -1,11 +1,23 @@
 import { ReactElement } from "react";
 
-type Direction = "previous" | "next" ;
+interface Direction{
+    direction: 'previous' | 'next';
+}
 
-export function CourseButtonCategory(direction: Direction): ReactElement{
-    direction == "previous" ? "<" : ">";
+export function CourseButtonCategory({ direction }: Direction): ReactElement{
+    let spanButton: string;
+    direction == "previous" ? spanButton = "<" : spanButton = ">";
+
+    const ButtonStyle = {
+        width: '40px',
+        height: '40px',
+        borderRadius: '100%',
+        border: 'none',
+        backgroundColor: 'red',
+        color: 'white'
+    }
 
     return(
-        <input type="button">{direction}</input>
+        <button style={ButtonStyle}>{spanButton}</button>
     )
 }
