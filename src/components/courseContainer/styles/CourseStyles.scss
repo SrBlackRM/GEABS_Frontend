@@ -1,0 +1,49 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 4rem 4rem;
+    gap: 0.5rem;
+
+    .category{
+        display: flex;
+        gap: 2rem;
+        background-color: rgba(85, 55, 0, 0.555);
+        padding: 20px;
+        border-radius: 10px;
+
+        img{
+            width: 20rem;
+            height: 14rem;
+            border-radius: 10px;
+        }
+
+        .course-card{
+            display: flex;
+            justify-content: center;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 13px;
+            position: relative;
+            transition: 0.3s;
+
+            .course-name{
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 10px;
+                color: white;
+                background-color: rgba(245, 47, 47, 0.8);
+                padding: 0.5rem;
+                border-radius: 5px;
+            }
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+
+.hidden{
+    display: none;
+}
