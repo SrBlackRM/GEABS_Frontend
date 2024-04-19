@@ -1,4 +1,4 @@
-import ProfilePage from "../pages/profilepage";
+import ProfilePage from "../pages/Profilepage";
 import StandTempl from "../templates/standtempl";
 
 export default function Profile() : JSX.Element{

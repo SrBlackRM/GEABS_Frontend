@@ -1,4 +1,5 @@
 import logo from "../../assets/LogoGEABS.png"
+import { DivGrouping } from "../DivGrouping";
 
 interface BannerInfo{
     title: string,
@@ -9,9 +10,9 @@ interface BannerInfo{
 export default function BannerInfo({title, desc, buttonValue}: BannerInfo): JSX.Element{
     return(
         <div className="banner-info-container flex-col gap-1">
-            <div className="flex-row gap-1 flex-row-v-center">
+            <DivGrouping className="flex-row gap-1 flex-row-v-center">
                 <h1>{title}</h1><img className="logo" src={logo} style={{ width: '3rem', height: '3rem'}} />
-            </div>
+            </DivGrouping>
             <h2>{desc}</h2>
             <input type="button" value={buttonValue}/>
         </div>

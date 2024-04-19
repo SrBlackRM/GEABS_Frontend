@@ -1,6 +1,9 @@
 @import "./Variables.scss";
 
 #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: $textFontFamily;
     font-weight: $textFontWeight;
     background-color: $mainColor;

@@ -1,4 +1,4 @@
-import HomePage from "../pages/homepage";
+import HomePage from "../pages/Homepage";
 import StandTempl from "../templates/standtempl";
 
 export default function Home(){

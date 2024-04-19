@@ -13,7 +13,7 @@ import NavbarButton from "./navbarButton";
 import NavbarDropdown from "./navbarDropdown";
 import NavbarSearch from "./navbarSearch";
 
-export default function Navbar() : JSX.Element {
+export function Navbar() : JSX.Element {
     const submenu: Array<string> = ['Home', 'Perfil', 'Certificados'];
 
     return(

@@ -1,4 +1,4 @@
-import CertificatesPage from "../pages/certificatespage";
+import CertificatesPage from "../pages/Certificatespage";
 import StandTempl from "../templates/standtempl";
 
 export default function Certificates() : JSX.Element{

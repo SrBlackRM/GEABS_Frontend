@@ -2,38 +2,44 @@
 
 .banner-container{
     justify-content: space-between;
-    margin-bottom: 5rem;    
+    margin-bottom: 5rem;
+    align-items: end;
 
     .banner-info-container{
-        position: relative;
         width: 100%;
-        margin: 10% 0 0 10%;
-
+        margin: 0 0 5% 5%;
+        flex-grow: 1;
 
         h1 {
             color: red;
             text-transform: uppercase;
             font-size: 3rem;
         }
+        
+        h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        input[type='button']{
+            width: 150px;
+            height: 50px;
+            background-color: $buttonCallColor;
+            color: $secondColor;
+            border: none;
+            border-radius: 10px;
+            text-transform: uppercase;
+    
+            &:hover{
+                cursor: pointer;
+                background-color: $buttonCallColorHover;
+            }
+        }
     }
 
     .banner-image-container{
         width: 100%;
         margin-right: 5%;
-    }
-
-    input[type='button']{
-        width: 200px;
-        height: 50px;
-        background-color: $buttonCallColor;
-        color: $secondColor;
-        border: none;
-        border-radius: 10px;
-
-        &:hover{
-            cursor: pointer;
-            background-color: $buttonCallColorHover;
-        }
-    }
+        flex-grow: 2;
+    }    
 }
 

@@ -1,5 +1,5 @@
 import "../styles/Template.scss"
-import Navbar from "../components/navbar/navbar";
+import { Navbar } from "../components/navbar/navbar";
 import { useEffect } from "react";
 import { Footer } from "../components/footer/Footer";
 
