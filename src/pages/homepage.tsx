@@ -24,14 +24,22 @@ export default function HomePage(){
         ],
     }
 
+    const policia: CourseCategory = {
+        category: "Policia",
+        courses: [
+            {name: "Resgate em Altura", imgSrc: "https://www.institutosc.com.br/files/como-realizarumresgateemaltura.jpg", description: "Curso de resgate em altura"}
+            ,{name: "Resgate em Espaço confinado", imgSrc: "https://www.revistaadnormas.com.br/uploads/2020/09/24.jpg", description:"Resgate em espaço confinado, curso completo"}
+            ,{name: "Resgate em Espaço confinado", imgSrc: "https://www.revistaadnormas.com.br/uploads/2020/09/24.jpg", description:"Resgate em espaço confinado, curso completo"}
+            ,{name: "Resgate em Espaço confinado", imgSrc: "https://www.revistaadnormas.com.br/uploads/2020/09/24.jpg", description:"Resgate em espaço confinado, curso completo"}
+        ],
+    }
+
     return(
         <section>
             <Banner />
             <CourseContainerByCategory category={courseFireFighter.category} courses={courseFireFighter.courses} />
             <CourseContainerByCategory category={courseVehicle.category} courses={courseVehicle.courses} />
-            <CourseContainerByCategory category={courseVehicle.category} courses={courseVehicle.courses} />
-            <CourseContainerByCategory category={courseVehicle.category} courses={courseVehicle.courses} />
-            <CourseContainerByCategory category={courseVehicle.category} courses={courseVehicle.courses} /> 
+            <CourseContainerByCategory category={policia.category} courses={policia.courses} /> 
             
         </section>
     );

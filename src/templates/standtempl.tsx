@@ -1,6 +1,7 @@
 import "../styles/Template.scss"
 import Navbar from "../components/navbar/navbar";
 import { useEffect } from "react";
+import { Footer } from "../components/footer/Footer";
 
 interface TemplateProps{
     children: JSX.Element,
@@ -17,6 +18,7 @@ export default function StandTempl({ children, title }: TemplateProps) : JSX.Ele
         <>
             <Navbar />
             {children}
+            <Footer />
         </>
     );
 }
