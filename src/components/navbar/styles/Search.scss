@@ -1,0 +1,14 @@
+@import "../../../styles/Variables.scss";
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-search{
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
