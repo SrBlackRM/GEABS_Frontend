@@ -40,6 +40,8 @@ const Card = styled.a`
     position: relative;
     transition: 0.3s;
     box-shadow: 4px 4px 15px rgb(100, 100, 100);
+    flex-basis: 20%;
+    height: 250px;
 
     &:hover{
         cursor: pointer;

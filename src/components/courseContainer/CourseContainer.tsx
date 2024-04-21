@@ -104,7 +104,8 @@ const CategoryContainer = styled(DivGrouping)<{courseLengh: number, minimum: num
     border-radius: 10px;
     position: relative;
     background-color: #000000b3;
-    align-items: ${({courseLengh, minimum}) => courseLengh > minimum ? 'center' : 'start'};
+    align-items: start;
+    max-width: 100vw;
 
     &:hover{ 
         .category-button{ opacity: 1; }
@@ -118,10 +119,11 @@ const CategoryContainerCards = styled(DivGrouping)`
     gap: 1rem;
     padding: 20px;
     border-radius: 10px;
+    width: 100%;
 
     img{
-        width: 20rem;
-        height: 20rem;
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
     }
 
