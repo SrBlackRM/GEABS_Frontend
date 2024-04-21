@@ -27,8 +27,7 @@ const ButtonCategory = ({ className, direction, handleClick }: {className:string
 
 export default function CourseContainerByCategory({ category, courses } : CourseCategory){
     const coursesAmount = courses.length;
-    const displayAmount = 5;
-
+    const displayAmount = Math.floor(window.innerWidth/330);
 
     const [arrayToSaveRemovedElements, setArraToSaveRemovedElements] = useState<Array<CourseModel>>([]);
     const [positionToDisplay, setPositionToDisplay] = useState(displayAmount);
@@ -76,6 +75,7 @@ export default function CourseContainerByCategory({ category, courses } : Course
         setCoursesDisplay(coursesDisplay.map(elem => elem));
     }
 
+
     return(
         <CategoryContainer courseLengh={coursesAmount} minimum={displayAmount}>
             <h1 className="category-name">{category}</h1>
@@ -111,15 +111,20 @@ const CategoryContainer = styled(DivGrouping)<{courseLengh: number, minimum: num
         .category-button{ opacity: 1; }
         
     }
+
+    @media (max-width: 768px){
+        margin: 2rem 0;
+        border-radius: 0;
+    }
 `;
 
 // CATEGORY
 const CategoryContainerCards = styled(DivGrouping)`
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
     padding: 20px;
     border-radius: 10px;
-    width: 100%;
 
     img{
         width: 100%;
@@ -127,6 +132,17 @@ const CategoryContainerCards = styled(DivGrouping)`
         border-radius: 5px;
     }
 
+    @media (max-width: 1400px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 1025px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 481px){
+        grid-template-columns: 1fr;
+    }
 `;
 
 // BOTÕES LATERAIS
@@ -148,5 +164,9 @@ const StyledButtonCategory = styled(ButtonCategory)`
     &:hover{
         cursor: pointer;
         background-color: rgb(174, 0, 255);
+    }
+
+    @media (max-width: 480px){
+        opacity:1;
     }
 `;

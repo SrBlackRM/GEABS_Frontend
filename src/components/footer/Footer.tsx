@@ -16,29 +16,8 @@ const CopyRight = ({ className, companyName }: {className:string, companyName: s
     )
 }
 
-const StyledFooter = styled.div`
-display: flex;
-justify-content: space-between;
-max-width: 100vw;
-border-top: 1px solid rgb(188, 188, 188);
-padding: 3rem 3rem 8rem 3rem;
-background-color: rgb(255, 111, 0);
-`;
-
-// apenas um exemplo de passar props
-// const CopyRight = styled.p<{ $right ?: boolean; }>`
-const StyledCopyRight = styled(CopyRight)`
-    color: white;
-    font-size: 12px;
-`;
-
-const StyledLinkToTerms = styled(LinkToTerms)`
-        text-decoration: none;
-        color: white;
-`;
-
-
 export function Footer(): ReactElement{
+
     const UseTermsUrl = "#";
     const PrivacyPoliceUrl = "#";
 
@@ -52,3 +31,36 @@ export function Footer(): ReactElement{
         </StyledFooter>
     )
 }
+
+
+/*        ---------------------        ---------------------        ESTILOS        ---------------------        ---------------------        */
+
+
+// FOOTER
+const StyledFooter = styled.div`
+display: flex;
+justify-content: space-between;
+max-width: 100vw;
+border-top: 1px solid rgb(188, 188, 188);
+padding: 3rem 3rem 8rem 3rem;
+background-color: rgb(255, 111, 0);
+
+@media (max-width: 480px){
+    flex-direction: column-reverse;
+    row-gap: 3rem;
+    padding-bottom: 3rem;
+}
+`;
+
+
+// COPYRIGHT
+const StyledCopyRight = styled(CopyRight)`
+    color: white;
+    font-size: 12px;
+`;
+
+// LINKS
+const StyledLinkToTerms = styled(LinkToTerms)`
+        text-decoration: none;
+        color: white;
+`;
