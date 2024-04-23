@@ -10,18 +10,19 @@ import { DataOfTableRowTextInput } from "../../components/CustomTable/DataOfTabl
 
 export default function ProfilePage(): JSX.Element{
     const addressTest = {
-        street: 'Avenida Argentina',
-        streetNumber: 683,
-        district: 'Parque Paraíso',
-        city: 'Itapecerica da Serra',
+        street: 'Alguma rua ai (vai puxar do backend)',
+        streetNumber: 111,
+        district: 'Bairro (vai puxar do backend)',
+        city: 'City of Devs (vai puxar do backend)',
         region: 'SP',
     }
 
     const myInfoTest = {
         name: 'Michel Rodrigues Mota',
         email: 'michelrbm@gmail.com',
-        celphone: '11975523449',
+        cellphone: '11975523449',
         avatar: {src: 'src/assets/avatar.jpg'},
+        cpf: '111.111.111-11'
     }
     
     return(
@@ -70,7 +71,7 @@ const AddressInfoComponents = ({address, className}: AddressInfoComponentsProps)
 
 // TABELA MEU PERFIL
 interface myProfileTableProps{
-    info: {name: string, email: string, celphone: string, avatar?: {src: string}}
+    info: {name: string, email: string, cellphone: string, avatar?: {src: string}, cpf: string}
     className?: string,
 }
 const myProfileTable = ({info, className}: myProfileTableProps ):ReactElement => {
@@ -82,7 +83,8 @@ const myProfileTable = ({info, className}: myProfileTableProps ):ReactElement =>
                     <LeftDivisionStyledTableRowFlex direction='column' >                        
                         <DataOfTableRowTextInput title="Nome:" data={info.name} disabled/>
                         <DataOfTableRowTextInput title="Email:" data={info.email} disabled/>
-                        <DataOfTableRowTextInput title="Celular:" data={info.celphone} />
+                        <DataOfTableRowTextInput title="Celular:" data={info.cellphone} />
+                        <DataOfTableRowTextInput title="CPF:" data={info.cpf} disabled/>
                     </LeftDivisionStyledTableRowFlex>
                 </TableRowGrid>
             </CustomTable>
@@ -110,4 +112,5 @@ const LeftDivisionStyledTableRowFlex = styled(TableRowFlex)`
     border-left: 1px solid white;
     padding-left: 5rem;
     gap: 2rem;
+    width: 100%;
 `
