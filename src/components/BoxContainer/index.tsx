@@ -4,7 +4,7 @@ import { ReactElement } from "react";
 
 interface BoxContainerProps{
     title: string,
-    children: ReactElement,
+    children: ReactElement | ReactElement[],
 }
 
 export const BoxContainer = ({title, children}: BoxContainerProps) => {

@@ -27,6 +27,6 @@ const StyledButton = styled.button<{type: number}>`
     
     &:hover{
         cursor: pointer;
-        background-color: #3d14b9;
+        background-color: #501de8;
     }
 `
