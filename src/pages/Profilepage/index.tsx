@@ -109,7 +109,7 @@ const StyledMyProfileTable = styled(myProfileTable)`
 `;
 
 const LeftDivisionStyledTableRowFlex = styled(TableRowFlex)`
-    border-left: 1px solid white;
+    border-left: 1px solid rgb(128, 128, 128);
     padding-left: 5rem;
     gap: 2rem;
     width: 100%;
